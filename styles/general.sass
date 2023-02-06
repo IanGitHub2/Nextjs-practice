@@ -1,0 +1,185 @@
+$small: 400px
+$medium: 700px
+
+header
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  height: 8rem
+  padding: 1rem
+  margin: 1rem
+  .navImg
+      border-radius: 25%
+      width: 5rem
+      height: 5em
+  .topNav
+    justify-content: center
+    align-content: center
+    ul
+      display: flex
+      text-decoration: none
+      list-style: none
+      gap: 2rem
+      li
+        font-weight: 600
+        font-size:  1.25rem
+        &:hover
+          color: rgb(0, 0, 0)
+          background: rgb(255, 255, 255)
+          border-radius: .2rem
+  .title-name
+    margin: .3rem 0rem
+
+footer 
+  background-color: #333
+  color: #fff
+  padding: 0.625rem
+  text-align: center
+  margin-top: 2rem
+
+main
+  width: 100%
+  max-width: 78.125rem
+  margin: auto
+  padding: 3.75rem 1.875rem
+  min-height: 72vh
+
+.home-body
+  display: flex
+  flex-direction: column
+  gap: 3.125rem
+  @media screen and (max-width: $medium)
+    gap: 1rem
+  .link-card
+    display: flex
+    flex-direction: row
+    gap: 1.875rem
+    justify-content: center
+    align-content: center
+    align-items: center
+    &:hover
+      border-radius: 1.5rem
+      background: rgba(67, 67, 70, 0.8)
+    @media screen and (max-width: $medium)
+      display: block
+    &:nth-child(even)
+      direction: rtl
+    .link-img
+      width: 35rem
+      border-radius: 1.5rem
+      @media screen and (max-width: $medium)
+        height: 18rem
+        width: 16rem
+    .link-content
+      width: 50%
+      @media screen and (max-width: $medium)
+        width: 100%
+
+
+.about-head-style
+  margin-left: 2rem
+  margin-bottom: 1.5rem
+
+.about-h1-def
+  margin-left: 2rem
+
+.about-ul-list
+  margin-left: 2rem
+
+.about-ex-stu
+  margin-left: 2rem
+
+.events-idv-page
+  display: flex
+  flex-direction: row
+  gap: 1.25rem
+  @media screen and (max-width: $medium)
+    flex-direction: column
+  .events-place-container
+    position: relative
+    &:hover
+      border-radius: .5rem
+      background: rgba(129, 129, 132, 0.8)
+    .events-img
+      width: 24.375rem
+      border-radius: 1.5rem
+      @media screen and (max-width: $medium)
+        width: 19rem
+        height: 12rem
+    h2
+      position: absolute
+      width: 100%
+      top: 50%
+      text-align: center
+      font-size: 2.375rem
+      background-color: rgba(80, 82, 84, 0.637)
+      border-radius: 3.125rem
+      color: white
+      text-transform: uppercase
+      text-shadow: 1px 1px 20px black
+      @media screen and (max-width: $medium)
+        position: absolute
+        width: 101%
+        top: 60%
+        text-align: center
+        font-size: 1.8rem
+        background-color: rgba(80, 82, 84, 0.637)
+        border-radius: 3.125rem
+        color: white
+        text-transform: uppercase
+        text-shadow: 1px 1px 20px black
+
+.category-events
+  width: 100%
+  text-align: center
+  h1
+    padding-bottom: 2rem
+    font-size: 3.5rem
+  .category-events-container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 8rem
+    width: 100%
+    justify-content: flex-start
+    .category-event
+      display: flex
+      flex-direction: column
+      width: 18rem
+      align-items: center
+      &:hover
+        border-radius: 1.5rem
+        background: rgba(56, 56, 58, 0.8)
+      .category-event-img
+        border-radius: 1.5rem
+        @media screen and (max-width: $medium)
+          height: 20rem
+          width: 19rem
+      h2
+        font-size: 2.5rem
+
+.single-event
+
+  .single-event-img
+    border-radius: 1.5rem
+    height: 25rem
+    width: 53.125rem
+    @media screen and (max-width: $medium)
+      height: 20rem
+      width: 19rem
+  .email-form
+    margin-top: 1.5rem
+    label
+      font-size: 1.5rem
+    input
+      height: 2.5rem
+      width: 12rem
+    button
+      height: 2.5rem
+      width: 5rem
+      margin-left: .5rem
+      &:hover
+        color: black
+        background: rgba(255, 255, 255, 0.882)
+        border-radius: 1.5rem
