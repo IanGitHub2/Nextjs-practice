@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
 
-export default function singleEvent({ data }) {
+export default function SingleEvent({ data }) {
     const EmailInput = useRef();
     const router = useRouter();
     const [message, setMessage] = useState('');
